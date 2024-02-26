@@ -1,0 +1,14 @@
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\bin\Debug\net6.0\LeaveManagementSystem.Models.deps.json
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\bin\Debug\net6.0\LeaveManagementSystem.Models.runtimeconfig.json
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\bin\Debug\net6.0\LeaveManagementSystem.Models.dll
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\bin\Debug\net6.0\LeaveManagementSystem.Models.pdb
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.dll
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\refint\LeaveManagementSystem.Models.dll
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.pdb
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\LeaveManagementSystem.Models.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Models\obj\Debug\net6.0\ref\LeaveManagementSystem.Models.dll

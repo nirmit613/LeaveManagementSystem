@@ -1,0 +1,15 @@
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\bin\Debug\net6.0\LeaveManagementSystem.Services.deps.json
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\bin\Debug\net6.0\LeaveManagementSystem.Services.dll
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\bin\Debug\net6.0\LeaveManagementSystem.Services.pdb
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\bin\Debug\net6.0\LeaveManagementSystem.Models.dll
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\bin\Debug\net6.0\LeaveManagementSystem.Models.pdb
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.dll
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\refint\LeaveManagementSystem.Services.dll
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\LeaveManagementSystem.Services.pdb
+C:\Users\Lenovo\Desktop\Nirmit\LeaveManagementSystem\LeaveManagementSystem.Services\obj\Debug\net6.0\ref\LeaveManagementSystem.Services.dll
