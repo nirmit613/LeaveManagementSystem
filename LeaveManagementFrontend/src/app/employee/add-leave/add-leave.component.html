@@ -1,0 +1,118 @@
+<form class="p-5 bg-light" [formGroup]="AddLeaveForm">
+    <h2 class="text-center fs-4">Add Leave</h2>
+
+   
+
+    <!-- Leave type dropdown -->
+    <div class="form-outline mb-4 ">
+        <label class="mb-1 fw-bold" for="leaveTypeId">Leave Type</label>
+      <select
+        class="form-control form-select"
+        formControlName="leaveTypeId"
+      >
+        <option  value="" hidden selected>Select Leave Type</option>
+        <option value="1">Casual leave</option>
+        <option value="2">Sick leave</option>
+        <option value="3">Paid leave</option>
+      </select>
+      <!-- errors in leave type -->
+      <div
+        *ngIf="
+          AddLeaveForm.get('leaveTypeId')!.invalid &&
+          AddLeaveForm.get('leaveTypeId')!.touched
+        "
+      >
+        <span
+          class="error-message"
+          *ngIf="AddLeaveForm.get('leaveTypeId')!.errors!['required']"
+        >
+          <small>Please select a leave type</small>
+        </span>
+      </div>
+    </div>
+    <div class="form-outline mb-4">
+        <label class="mb-1 fw-bold" for="startDate">Start Date</label>
+        <input
+        type="date"
+        class="form-control"
+        id="date"
+        formControlName="startDate"
+        [min]="minDate()"
+      />
+      <div
+      *ngIf="
+        AddLeaveForm.get('startDate')!.invalid &&
+        AddLeaveForm.get('startDate')!.touched
+      "
+    >
+      <span
+        class="error-message"
+        *ngIf="AddLeaveForm.get('startDate')!.errors!['required']"
+      >
+        <small>Please select startDate</small>
+      </span>
+    </div>
+    </div>
+    <div class="form-outline mb-4">
+        <label class="mb-1 fw-bold" for="endDate">End Date</label>
+        <input
+        type="date"
+        class="form-control"
+        id="date"
+        formControlName="endDate"
+        [min]="minDate()"
+      />
+      <div
+      *ngIf="
+        AddLeaveForm.get('endDate')!.invalid &&
+        AddLeaveForm.get('endDate')!.touched
+      "
+    >
+      <span
+        class="error-message"
+        *ngIf="AddLeaveForm.get('endDate')!.errors!['required']"
+      >
+        <small>Please select end date</small>
+      </span>
+    </div>
+    </div>
+    <div class="form-outline mb-4">
+        <label class="mb-1 fw-bold" for="reasonForLeave">Reason for leave</label>
+        <input
+          type="text"
+          class="form-control"
+          id="reasonForLeave"
+          placeholder="Enter valid reason for leave"
+          formControlName="reasonForLeave"
+        />
+        <div
+        *ngIf="
+          AddLeaveForm.get('reasonForLeave')!.invalid &&
+          AddLeaveForm.get('reasonForLeave')!.touched
+        "
+      >
+        <span
+          class="error-message"
+          *ngIf="AddLeaveForm.get('reasonForLeave')!.errors!['required']"
+        >
+          <small>Please select a leave type</small>
+        </span>
+      </div>
+    </div>
+
+    <div class="text-center text-lg-center mt-4 pt-2 align-items-center">
+      <button
+        type="button"
+        class="btn btn-secondary btn-md w-25"
+        [disabled]="AddLeaveForm.invalid"
+        (click)="AddLeave()"
+      >
+      
+        Add
+      </button>
+      <button class="btn btn-danger btn-md w-25 ms-3" (click)="close()">
+        Close
+        <i class="fa-sharp fa-solid fa-close"></i>
+      </button>
+    </div>
+  </form>

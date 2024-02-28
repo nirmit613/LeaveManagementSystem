@@ -55,12 +55,14 @@ export class LoginComponent {
             this.router.navigateByUrl('admin/Leave-list');
             console.log("Login manager success");
             
+          }else if(response.role === 'Employee'){
+            this.router.navigateByUrl('employee/empLeavelist')
+            console.log("Login Employee success");
+            
           } else {
-            // this.router.navigateByUrl('landing');
-            console.log("error");
+            console.log("Some error occur in login");
             
           }
-          
           this.toast.success({detail:"Success Message",summary:"You are logged in successfully!!",duration:3000});
           
         },

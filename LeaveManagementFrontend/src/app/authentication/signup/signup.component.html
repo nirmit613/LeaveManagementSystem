@@ -1,1 +1,268 @@
-<p>signup works!</p>
+<section class="">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img
+            src="assets/loginLogo.png"
+            class="img-fluid"
+            alt="Sample image"
+          />
+        </div>
+  
+        <div class="col-md-8 col-lg-6 col-xl-5 offset-xl-1">
+          <form class="signup" [formGroup]="signupForm">
+            <div
+              class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+            >
+              <h1 class="py-3">Sign Up</h1>
+            </div>
+  
+            <!-- First Name input -->
+            <div class="form-outline mb-4">
+              <input
+                type="text"
+                id="form3Example1"
+                class="form-control form-control-md"
+                placeholder="Enter your first name"
+                formControlName="firstName"
+              />
+              <!-- errors in fname -->
+              <div
+                *ngIf="
+                  signupForm.get('firstName')!.invalid &&
+                  signupForm.get('firstName')!.touched
+                "
+              >
+                <span
+                  class="error-message"
+                  *ngIf="signupForm.get('firstName')!.errors!['required']"
+                >
+                  <small>First name is required</small>
+                </span>
+              </div>
+            </div>
+             <!-- Last Name input -->
+             <div class="form-outline mb-4">
+                <input
+                  type="text"
+                  id="form3Example1"
+                  class="form-control form-control-md"
+                  placeholder="Enter your last name"
+                  formControlName="lastName"
+                />
+                <!-- errors in lName -->
+                <div
+                  *ngIf="
+                    signupForm.get('lastName')!.invalid &&
+                    signupForm.get('lastName')!.touched
+                  "
+                >
+                  <span
+                    class="error-message"
+                    *ngIf="signupForm.get('lastName')!.errors!['required']"
+                  >
+                    <small>Last name is required</small>
+                  </span>
+                </div>
+              </div>
+  
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input
+                type="email"
+                id="form3Example2"
+                class="form-control form-control-md"
+                placeholder="Enter a valid email address"
+                formControlName="email"
+              />
+              <!-- errors in email -->
+              <div
+                *ngIf="
+                  signupForm.get('email')!.invalid &&
+                  signupForm.get('email')!.touched
+                "
+              >
+                <span
+                  class="error-message"
+                  *ngIf="signupForm.get('email')!.errors!['required']"
+                >
+                  <small>Email is required</small>
+                </span>
+                <span
+                  class="error-message"
+                  *ngIf="
+                    signupForm.get('email')!.errors!['email'] ||
+                    signupForm.get('email')!.errors!['pattern']
+                  "
+                >
+                  <small>Please enter valid email</small>
+                </span>
+              </div>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3 field">
+              <input
+                type="{{ type }}"
+                id="form3Example4"
+                required
+                autocomplete="off"
+                class="form-control form-control-md"
+                placeholder="Enter password"
+                formControlName="password"
+                [pattern]="patternForPassword"
+              />
+  
+              <!-- Hide/show password icon -->
+              <span class="eyehide" (click)="hideShowPass()">
+                <i class="fa" [ngClass]="eyeIcon"></i>
+              </span>
+  
+              <!-- errors in password -->
+              <div
+                *ngIf="
+                  signupForm.get('password')?.invalid &&
+                  signupForm.get('password')?.touched
+                "
+              >
+                <span
+                  class="error-message"
+                  *ngIf="(signupForm.get('password')?.errors)!['required']"
+                >
+                  <small>Please enter password.</small>
+                </span>
+                <span
+                  class="error-message"
+                  *ngIf="(signupForm.get('password')?.errors)!['pattern']"
+                >
+                  *Password must contain one Uppercase, one Lowercase, one Special
+                  characters, and numbers. Password must be 8 characters long.
+                </span>
+              </div>
+            </div>
+  
+            <!-- Mobile number input -->
+            <div class="form-outline mb-4">
+              <input
+                type="text"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                id="form3Example4"
+                class="form-control form-control-md"
+                placeholder="Enter your mobile number"
+                formControlName="mobileNumber"
+              />
+              <!-- errors in mobile number -->
+              <div
+                *ngIf="
+                  signupForm.get('mobileNumber')!.invalid &&
+                  signupForm.get('mobileNumber')!.touched
+                "
+              >
+                <span
+                  class="error-message"
+                  *ngIf="signupForm.get('mobileNumber')!.errors!['required']"
+                >
+                  <small>Mobile number is required</small>
+                </span>
+                <span
+                  class="error-message"
+                  *ngIf="(signupForm.get('mobileNumber')?.errors)!['pattern']"
+                >
+                  Mobile number must be 10 digits.
+                </span>
+              </div>
+            </div>
+
+            <!-- Department input -->
+            <div class="form-outline mb-4">
+                <input
+                  type="text"
+                  id="form3Example1"
+                  class="form-control form-control-md"
+                  placeholder="Enter Department"
+                  formControlName="department"
+                />
+                <!-- errors in department -->
+                <div
+                  *ngIf="
+                    signupForm.get('department')!.invalid &&
+                    signupForm.get('department')!.touched
+                  "
+                >
+                  <span
+                    class="error-message"
+                    *ngIf="signupForm.get('department')!.errors!['required']"
+                  >
+                    <small>Department is required</small>
+                  </span>
+                </div>
+              </div>
+                <!-- Department input -->
+            <div class="form-outline mb-4">
+                <input
+                  type="text"
+                  id="form3Example1"
+                  class="form-control form-control-md"
+                  placeholder="Enter Designation"
+                  formControlName="designation"
+                />
+                <!-- errors in designation -->
+                <div
+                  *ngIf="
+                    signupForm.get('designation')!.invalid &&
+                    signupForm.get('designation')!.touched
+                  "
+                >
+                  <span
+                    class="error-message"
+                    *ngIf="signupForm.get('designation')!.errors!['required']"
+                  >
+                    <small>Designation is required</small>
+                  </span>
+                </div>
+              </div>
+  
+            <!-- Role dropdown -->
+            <div class="form-outline mb-4">
+              <select
+                class="form-select form-select-md"
+                aria-label="Select role"
+                formControlName="roleId"
+              >
+                <option  value="" hidden selected>Select role</option>
+                <option value="1">Manager</option>
+                <option value="2">Employee</option>
+              </select>
+              <!-- errors in role -->
+              <div
+                *ngIf="
+                  signupForm.get('roleId')!.invalid &&
+                  signupForm.get('roleId')!.touched
+                "
+              >
+                <span
+                  class="error-message"
+                  *ngIf="signupForm.get('roleId')!.errors!['required']"
+                >
+                  <small>Please select a role</small>
+                </span>
+              </div>
+            </div>
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button
+                type="button"
+                class="btn btn-secondary btn-md w-25"
+                [disabled]="signupForm.invalid"
+                (click)="signup()"
+              >
+                Sign Up
+              </button>
+              <button  class="btn btn-secondary ms-4 opacity-75" (click)="navigateAdminDashboard()">Back to Dashboard</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>

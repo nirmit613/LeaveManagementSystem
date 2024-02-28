@@ -21,7 +21,7 @@ namespace LeaveManagementSystem.Models.Repository
 
         public IEnumerable<Leave> GetLeaves()
         {
-            return _context.Leaves.ToList();
+            return _context.Leaves.Include(u => u.User).Include(l=>l.LeaveType).ToList();
         }
         public Leave GetLeaveById(int id)
         {
@@ -29,7 +29,7 @@ namespace LeaveManagementSystem.Models.Repository
         }
         public IEnumerable<Leave> GetLeaveByUserId(int userId)
         {
-            return _context.Leaves.Include(u => u.User).Where(u => u.UserId == userId).ToList();
+            return _context.Leaves.Include(u => u.User).Include(l=>l.LeaveType).Where(u => u.UserId == userId).ToList();
         }
         public int AddLeave(Leave leave)
         {
